@@ -12,15 +12,46 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 2rem;
 
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 5.05rem;
+}
+
+#top {
+    width: 400px;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
 
 .line {
     background-color: var(--secondary);
-    width: 500px;
-    height: 100px;
+}
+
+#line-1 {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    top: 100px;
+}
+#line-2 {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+}
+#line-3 {
+    position: absolute;
+}
+#line-4 {
+    position: absolute;
+}
+
+#board {
+ width: 400px;
+ height: 400px;
+ background-color: gray;
 }

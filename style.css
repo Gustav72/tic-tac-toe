@@ -9,5 +9,18 @@ body {
     font-family: 'Pacifico', cursive;
     background-color: var(--primary);
     color: var(--secondary);
-    -webkit-text-stroke: 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.line {
+    background-color: var(--secondary);
+    width: 500px;
+    height: 100px;
 }

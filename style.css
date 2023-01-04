@@ -30,7 +30,7 @@ h1 {
 
 }
 
-#board {
+#container {
  width: 400px;
  height: 400px;
  background-color: var(--secondary);

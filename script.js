@@ -1,13 +1,6 @@
-
-
-
 const gameFlow = (function(){
-    let turn = function() {
-        
-    };
-    const checkWin = function() {
 
-        console.log('fffffffffffffff')
+    const checkWin = function() {
         //check rows for win
         if (
             (gameBoard.board[0].innerHTML == gameBoard.board[1].innerHTML && gameBoard.board[0].innerHTML !== '') 
@@ -15,10 +8,10 @@ const gameFlow = (function(){
             || 
             (gameBoard.board[3].innerHTML == gameBoard.board[4].innerHTML && gameBoard.board[3].innerHTML !== '')
                 && (gameBoard.board[4].innerHTML == gameBoard.board[5].innerHTML && gameBoard.board[5].innerHTML !== '')
-            || 
+            ||
             (gameBoard.board[6].innerHTML == gameBoard.board[7].innerHTML && gameBoard.board[6].innerHTML !== '')
                 && (gameBoard.board[7].innerHTML == gameBoard.board[8].innerHTML && gameBoard.board[8].innerHTML !== '')
-        ) console.log('row win');
+        ) gameFlow.gameOver();
         //check columns for win
         else if (
             (gameBoard.board[0].innerHTML == gameBoard.board[3].innerHTML && gameBoard.board[0].innerHTML !== '') 
@@ -29,7 +22,7 @@ const gameFlow = (function(){
             || 
             (gameBoard.board[2].innerHTML == gameBoard.board[5].innerHTML && gameBoard.board[2].innerHTML !== '')
                 && (gameBoard.board[5].innerHTML == gameBoard.board[8].innerHTML && gameBoard.board[5].innerHTML !== '')
-        ) console.log('column win');
+        ) gameFlow.gameOver();
          //check diagonals for win
         else if (
             (gameBoard.board[0].innerHTML == gameBoard.board[4].innerHTML && gameBoard.board[0].innerHTML !== '') 
@@ -37,30 +30,19 @@ const gameFlow = (function(){
             || 
             (gameBoard.board[2].innerHTML == gameBoard.board[4].innerHTML && gameBoard.board[2].innerHTML !== '')
                 && (gameBoard.board[4].innerHTML == gameBoard.board[6].innerHTML && gameBoard.board[4].innerHTML !== '')
-        ) console.log('diagonal win');
+        ) gameFlow.gameOver();
         return;
-        
     }
     const gameOver = function() {
-
-    }
-    const checkSpace = function() {
-
+        
     }
 
     return {
-        checkWin
+        checkWin,
+        gameOver    
     }
 
 })()
-
-const player = (function(){
-
-})();
-
-const AI = (function(){
-
-})();
 
 const gameBoard = (function(){
     let board = [];

@@ -34,7 +34,21 @@ const gameFlow = (function(){
         return;
     }
     const gameOver = function() {
+        let outcome = 'Win'
         
+        let container = document.getElementById('container')
+        
+        while(container.lastChild) container.lastChild.remove();
+        
+        let message = document.createElement('h2');
+        let button = document.createElement('button')
+        
+        message.innerHTML = 'You ' + outcome 
+        button.innerHTML = '↻'
+
+        container.appendChild(message);
+        container.appendChild(button);
+
     }
 
     return {

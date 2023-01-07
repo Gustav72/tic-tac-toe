@@ -64,3 +64,13 @@ h1 {
     font-size: 4rem;
     margin-top: 0;
 }
+
+button {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    font-size: larger;
+    border: none;
+}

@@ -34,7 +34,7 @@ const gameFlow = (function(){
         return;
     }
     const gameOver = function() {
-        let outcome = 'Win'
+        let outcome = 'Lose'
         
         let container = document.getElementById('container')
         
@@ -42,9 +42,16 @@ const gameFlow = (function(){
         
         let message = document.createElement('h2');
         let button = document.createElement('button')
-        
+
+        container.style.backgroundColor = "var(--primary)";
+        container.style.display = "block";
+        container.style.textAlign = "center";
+        container.style.height = "300px";
+
+
         message.innerHTML = 'You ' + outcome 
         button.innerHTML = '↻'
+        button.setAttribute('onclick','gameBoard.restartGame()')
 
         container.appendChild(message);
         container.appendChild(button);
@@ -84,9 +91,9 @@ const gameBoard = (function(){
         
     }
     const restartGame = function() {
-        for(let i = 0; i < 9; i++ ) {
-        document.getElementById(i).innerHTML = '';
-    }
+        
+        location.reload()
+    
     }
     return {
         board,

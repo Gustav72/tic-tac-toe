@@ -18,6 +18,6 @@ Project from [The Odin Project](https://www.theodinproject.com/)
 
 This project involves DOM manipulation with modular JavaScript implementing Immediately Invoked Function Expression (IFFE) with no global variables. The user is up against a simple computer player. When there's 3 in a row the user is notified who won. The user is notified when its a tie. A button to restart the game to play again pops up after the end of every game. Creating this project was surprisingly satisfying.
 
-![Screenshot of User Interface](./Screenshot.png)
+![Screenshot of User Interface](./Screenshot.PNG)
 
 Thank You for taking the time to look at my work!

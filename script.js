@@ -40,29 +40,24 @@ const gameBoard = (function(){
 
 const gameFlow = (function(){
 
-    
     const gameOver = function(outcome) {
         
-        let container = document.getElementById('container')
+        let container = document.getElementById('bottom')
         
         while(container.lastChild) container.lastChild.remove();
         
         let message = document.createElement('h2');
         let button = document.createElement('button')
 
-        container.style.backgroundColor = "var(--primary)";
-        container.style.display = "block";
         container.style.textAlign = "center";
-        container.style.height = "300px";
-
-
+        container.style.fontSize = "3rem";
+       
         message.innerHTML = outcome 
         button.innerHTML = '↻'
         button.setAttribute('onclick','gameBoard.restartGame()')
 
         container.appendChild(message);
         container.appendChild(button);
-
     }
 
     const robot = function() { 
@@ -93,7 +88,6 @@ const gameFlow = (function(){
             console.log('else')
         }
         }
-
 
         gameFlow.checkWin()
 
@@ -181,7 +175,6 @@ const gameFlow = (function(){
     }
 
 })()
-
 
 gameBoard.init();
 

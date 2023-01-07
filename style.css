@@ -21,6 +21,10 @@ h1 {
     padding-bottom: 0;
 }
 
+h2 {
+    margin-bottom: 20px
+}
+
 #top {
     width: 350px;
     display: flex;
@@ -49,13 +53,13 @@ h1 {
     font-size: 5rem;
 }
 
-.bottom {
+#bottom {
     width: 400px;
     text-align: center;
     font-size: 1.43rem;
 }
 
-.bottom > p {
+#heartwarming {
     margin-top: 50px;
     margin-bottom: 0;
 }
@@ -71,6 +75,7 @@ button {
     border-radius: 100px;
     height: 100px;
     width: 100px;
-    font-size: larger;
+    font-size: 50px;
     border: none;
 }
+
